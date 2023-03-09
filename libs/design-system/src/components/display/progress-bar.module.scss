@@ -1,0 +1,16 @@
+.inside-bar {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: indeterminate-progress;
+}
+
+@keyframes indeterminate-progress {
+  from {
+    left: -50%;
+    width: 50%;
+  }
+  to {
+    left: 100%;
+    width: 30%;
+  }
+}

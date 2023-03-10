@@ -109,8 +109,9 @@ export function PillsInput<T extends object>({
                           layout
                           variants={optionAnimation}
                           className={classNames(
-                            'flex justify-between items-center bg-slate-100 px-6 py-4 rounded-md cursor-pointer transition-colors',
-                            { 'bg-purple-600 text-white': active }
+                            'flex justify-between items-center px-6 py-4 rounded-md cursor-pointer transition-colors',
+                            { 'bg-purple-500 text-white': active },
+                            { 'bg-slate-100': !active }
                           )}
                         >
                           <div>{getLabel(option)}</div>

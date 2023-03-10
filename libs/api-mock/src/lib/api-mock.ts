@@ -20,7 +20,7 @@ export async function queryNames(query?: string, max = 5): Promise<People[]> {
             .filter((p) => (query ? p.name.includes(query) : true))
             .slice(0, max)
         ),
-      200
+      2000
     );
   });
 }
